@@ -1,0 +1,17 @@
+@media print {
+    body {
+        background-color: #d9ead3;
+    }
+    .card {
+        box-shadow: none;
+    }
+    .btn {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+}
+.card-header {
+    background-color: transparent;
+}

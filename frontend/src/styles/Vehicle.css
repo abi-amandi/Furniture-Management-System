@@ -1,0 +1,92 @@
+.main-container {
+    display: flex;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.img-container {
+    position: absolute;
+    top: 110px;
+    right: -270px;
+    margin-top: 20px;
+    /* margin-right: 20px; */
+}
+
+.img {
+    border-radius: 10px;
+    align-items: flex-end;
+    width: 900px; /* Adjust the width as needed */
+    height: 500px;
+}
+
+.btn-submit-container {
+    margin-top: 250px;
+}
+
+.btn-submit {
+    margin-top: 180px;
+    /* border-radius: 5px; */
+    margin-left: 1150px;
+}
+
+.vehicle-form-container {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 100px;
+    max-width: 500px;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 5px;
+    /* background-color: #f9f9f9; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+.vehicle-form-container h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    /* text-align: center; */
+}
+
+.vehicle-form-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+
+.vehicle-form-container input[type="text"],
+.vehicle-form-container input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.vehicle-form-container button {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    width: 200px;
+}
+
+.vehicle-form-container button:hover {
+    background-color: #0056b3;
+}
+
+.vehicle-form-container .error {
+    color: #dc3545;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.upload {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}

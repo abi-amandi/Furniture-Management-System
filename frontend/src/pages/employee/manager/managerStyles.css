@@ -1,0 +1,21 @@
+.managerapp{
+    background-image: url(/public/images/manager.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 900px;
+ 
+}
+
+.profile{
+    background-image: url(/public/images/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px 600px;
+ 
+}
+
+.report-btn{
+    position: absolute;
+    right: 0;
+    top: 35%;
+  transform: translateY(-50%);
+  margin-right: 15px;
+}

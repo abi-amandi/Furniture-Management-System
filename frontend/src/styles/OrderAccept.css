@@ -1,0 +1,39 @@
+.orders-container {
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.accept-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.condition-order {
+    color: #777;
+    font-style: italic;
+}
+
+tbody tr:not(:last-child) {
+    margin-bottom: 10px;
+}

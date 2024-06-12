@@ -1,0 +1,47 @@
+/* styles/OrderDet.css */
+
+.order-details-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.order-details {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.status-bar {
+    height: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancel-btn {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    padding: 5px 10px;
+    background-color: #2196f3;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

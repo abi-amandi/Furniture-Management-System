@@ -1,0 +1,41 @@
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+  }
+  
+  .navigation li a {
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px;
+  }
+  
+  lable {
+    margin-right: 165px;
+  }
+  
+  button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: Arial, sans-serif; /* Specify the font family */
+    font-size: 14px; /* Specify the font size */
+    font-weight: bold; /* Specify the font weight */
+    display: flex; /* Make button a flex container */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker Green */
+  }
+  
+  .fas {
+    margin-right: 5px;
+  }
+  

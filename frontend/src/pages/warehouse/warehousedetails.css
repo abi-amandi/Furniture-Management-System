@@ -1,0 +1,80 @@
+.warehouse-details-container {
+  margin: 20px;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.add-button {
+  padding: 12px 24px;
+  background-color: #21D192;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #21D192;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pdf-content {
+  width: 100%;
+}
+
+.warehouse-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.warehouse-table th, .warehouse-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.action-link {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+.action-button {
+  padding: 8px 16px;
+  background-color: #DC3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pdf-button {
+  padding: 12px 24px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

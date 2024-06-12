@@ -1,0 +1,134 @@
+/* Overall layout and responsiveness */
+.container-dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+  }
+  
+  /* Header section */
+  .upper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  /* Main content section */
+  .bottom-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  /* Content sections (upper-left, upper-right, etc.) */
+  .upper-left-container,
+  .upper-right-container,
+  .bottom-left-container,
+  .bottom-right-container {
+    flex: 1;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Side panel */
+  .side-panel {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    background-color: #343a40;
+    color: #fff;
+    transition: left 0.3s ease-in-out;
+    z-index: 1000;
+    padding: 2rem 1rem;
+  }
+  
+  .side-panel.open {
+    left: 0;
+  }
+  
+  /* Side panel title */
+  .title-container {
+    padding-bottom: -1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 1.2rem;
+  }
+  
+  /* Side panel options */
+  .options-container {
+    margin-top: 1rem;
+  }
+  
+  .option {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #495057;
+  }
+  
+  /* Toggle button */
+  .toggle-button {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .toggle-button:hover {
+    background-color: #0067cc;
+  }
+  
+  /* Orders table */
+  .orders-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .orders-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .orders-table tbody tr:hover {
+    background-color: #f9f9f9;
+  }
+ 
+  .status-box {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+}

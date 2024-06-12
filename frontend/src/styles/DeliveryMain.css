@@ -1,0 +1,39 @@
+.DeliveryAdminMain-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 500px;
+  /* background-color: #f5f5f5; */
+  padding: 20px;
+  margin: 50px auto 50px auto;
+}  
+
+.chart-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Upper-left-container styles */
+.upper-left-container {
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-item {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.stat-item:last-child {
+  border-right: none;
+}

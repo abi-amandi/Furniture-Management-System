@@ -1,0 +1,7 @@
+.search-container{
+    display: flex;
+    justify-content: center;
+
+    width: 300px;
+    padding: 10px;
+}

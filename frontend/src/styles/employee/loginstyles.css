@@ -1,0 +1,31 @@
+.form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: vh;
+    background-image: url(/public/images/emp.jpg);
+    background-repeat: no-repeat;
+  background-size: 2000px 1400px;
+}
+
+.register-form{
+    padding: 30px;
+    background-color: #ffffffdf;
+    border: 3px solid black;
+    opacity: 0.7;
+    font-weight: bold;
+  color: #000000;
+  width: 50vh;
+  border-radius: 25px;
+}
+
+
+.register-box{
+    background-color: rgb(179, 183, 186);
+}
+
+.reg{
+    font-weight: bold;
+    color: #5e07aa;
+}

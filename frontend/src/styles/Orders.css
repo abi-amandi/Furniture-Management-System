@@ -1,0 +1,270 @@
+/* Orders.css */
+
+.orders-container {
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-content {
+  overflow-x: auto;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+.orders-table th {
+  background-color: #f0f0f0;
+}
+
+.orders-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.selected {
+  background-color: #f0f0f0;
+}
+
+.item-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.item-name {
+  padding: 3px 5px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+}
+
+.error-message,
+.loading-message {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+}
+
+/* .search-bar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-results {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #666;
+} */
+
+.order-details-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  background-color: #ffffff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 400px; /* Adjusted width */
+  z-index: 10;
+}
+
+.close-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333333; /* Dark gray for close button text */
+}
+
+.close-btn:hover {
+  color: #999999; /* Lighter gray on hover */
+}
+
+.order-details-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.order-details-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222222; /* Darker text for better contrast */
+}
+
+.order-details {
+  background-color: #f5f5f5; /* Light gray background for content area */
+  padding: 1.5rem;
+  border-radius: 4px; /* Rounded corners */
+  margin-top: 1rem; /* Spacing from header */
+}
+
+.order-details p {
+  margin-bottom: 0.7rem;
+  line-height: 1.5; /* Improved line spacing for readability */
+}
+
+.order-details-label {
+  font-weight: bold;
+  display: inline-block;
+  width: 100px; /* Consistent label width for alignment */
+}
+
+.order-details-value {
+  display: inline-block;
+}
+
+.order-details-status {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem; /* Spacing after status text */
+}
+
+.status-dot {
+  width: 18px; /* Increased dot size for better visibility */
+  height: 18px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.progress-bar {
+  width: 100%; /* Full width of the popup container */
+  height: 5px; /* Consistent progress bar height */
+  background-color: #dddddd; /* Light gray background */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Hides the overflowing part of the progress */
+}
+
+.progress-bar > span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #4caf50; 
+  transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out; 
+}
+
+/* Define colors for different statuses (optional) */
+.order-details-status.pending .progress-bar > span {
+  background-color: #ffc107; /* Yellow for pending status */
+}
+
+.order-details-status.shipped .progress-bar > span {
+  background-color: #007bff; /* Blue for shipped status */
+}
+
+.order-details-status.delivered .progress-bar > span {
+  background-color: #28a745; /* Green for delivered status */
+}
+
+/* Adjust width of the progress bar based on status (optional) */
+.order-details-status.pending .progress-bar > span {
+  width: 30%; /* Example: 30% for pending */
+}
+
+.order-details-status.shipped .progress-bar > span {
+  width: 70%; /* Example: 70% for shipped */
+}
+
+.order-details-status.delivered .progress-bar > span {
+  width: 100%; /* 100% for delivered */
+}
+
+.item-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.item-images img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.btn-cancel {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 8px 16px;
+  font-size: 1rem;
+  background-color: #dc3545; /* Red color for cancel button */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-cancel:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.orders-table tbody tr.cancelled {
+  opacity: 0.5; /* Adjust the opacity level as needed */
+}
+
+/* Orders.css */
+
+.search-bar {
+margin-top: 20px;
+margin-left: 800px;
+}
+
+.search-bar input[type="date"] {
+padding: 8px;
+border-radius: 5px;
+border: 1px solid #ccc;
+font-size: 14px;
+margin-right: 10px;
+}
+
+.search-bar input[type="date"]::placeholder {
+color: #aaa;
+}
+
+.filter-bar {
+margin-top: 20px;
+display: flex;
+align-items: center;
+}
+
+.filter-bar label {
+font-size: 15px;
+margin-right: 10px;
+font-weight: bold;
+}
+
+.filter-bar input[type="checkbox"] {
+margin-right: 5px;
+}
+
